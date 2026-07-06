@@ -26,13 +26,29 @@ After each round you get a written report: per-question grades, weak points mapp
 
 ## Install
 
-Claude Code (recommended):
+One command, no manual copying (works with Claude Code, Codex, Cursor, OpenCode, and [70+ other agents](https://github.com/vercel-labs/skills#supported-agents)):
 
 ```bash
-cp -R interview-helper ~/.claude/skills/interview-helper
+npx skills add lewiswang0516/interview-helper-skill
 ```
 
-claude.ai: upload the folder as a skill in your capabilities settings.
+Add `-g` to install globally (available in all projects) instead of the current project:
+
+```bash
+npx skills add lewiswang0516/interview-helper-skill -g
+```
+
+To update later: `npx skills update`.
+To remove: `npx skills remove interview-helper`.
+
+Manual install for Claude Code (if you prefer):
+
+```bash
+git clone https://github.com/lewiswang0516/interview-helper-skill
+cp -R interview-helper-skill/skills/interview-helper ~/.claude/skills/interview-helper
+```
+
+claude.ai: upload the `skills/interview-helper` folder as a skill in your capabilities settings.
 
 ## Use
 
