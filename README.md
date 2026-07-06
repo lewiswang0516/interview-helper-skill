@@ -1,5 +1,7 @@
 # Interview Helper
 
+English | [简体中文](README.zh-CN.md)
+
 A Claude skill that helps you truly master your own coding assignment before an oral code interview (viva / code walkthrough / interview-style assessment).
 
 Many courses (UQ, USYD, and others) check coding projects with an interview.
